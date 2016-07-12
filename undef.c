@@ -1,4 +1,5 @@
-#include "macro.h"
+#define macro(arg1) \
+    (arg1)
 
 #undef macro
 #define macro(arg1, arg2) \
@@ -6,7 +7,7 @@
 
 int main()
 {
-    macro(1, 2); //FAIL
+    macro(1, 2); //Highlight that macro has too many arguments (use previous definition)
     return 0;
 }
 
