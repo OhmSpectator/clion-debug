@@ -14,3 +14,4 @@ add_executable(undef undef.c)
 
 add_executable(format_string_via_macro format_string_via_macro.c)
 
+add_executable(unnamed_bit_field unnamed_bit_field.c)
